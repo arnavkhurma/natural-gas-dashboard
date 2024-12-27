@@ -11,6 +11,7 @@ from FRED.fred import load_fred
 from EIA.eia import load_eia
 from home import load_home
 
+
 load_dotenv()
 # FRED API SETUP
 FRED_API_KEY = os.getenv("FRED_API")
@@ -22,7 +23,6 @@ base_url = "https://api.stlouisfed.org/fred/"
 # SETUP
 with st.sidebar:
     st.header("Natural Gas Dashboard")
-    st.write("Name: Arnav Khurma")
 
 current_page = st.sidebar.radio(
     'Data Source', 
